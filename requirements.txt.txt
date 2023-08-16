@@ -1,0 +1,10 @@
+pandas
+streamlit
+streamlit.components.v1
+plotly.offline
+plotly.graph_objs
+plotly_express
+numpy
+matplotlib.pyplot
+mpld3
+base64
