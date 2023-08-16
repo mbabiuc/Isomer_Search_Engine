@@ -1,0 +1,13 @@
+[theme]
+# Custom theme settings
+base="dark"
+primaryColor="#00AC3E"
+backgroundColor="#EDEEEE"
+secondaryBackgroundColor="#CBCECE"
+textColor="#131716"
+font="sans serif"
+
+[server]
+# Custom server settings
+headless=true
+enableCORS=false
