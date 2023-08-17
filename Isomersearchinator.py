@@ -2,7 +2,6 @@ import pandas as pd
 import streamlit as st
 import plotly_express as px
 import numpy as np
-import mpld3
 import base64
 
 # This is the general page setup info
