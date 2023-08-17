@@ -1,11 +1,7 @@
 import pandas as pd
 import streamlit as st
-# import streamlit.components.v1 as components
-# import plotly.offline as pyo
-# import plotly.graph_objs as go
 import plotly_express as px
 import numpy as np
-# import matplotlib.pyplot as plt
 import mpld3
 import base64
 
