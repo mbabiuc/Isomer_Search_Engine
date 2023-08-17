@@ -13,7 +13,7 @@ st.set_page_config(page_title='Isomer Search Engine',
 # @st.cache_data                      # ---Unsure if it is needed---
 # def get_data_from_excel():               #---Unsure if it is needed---
 df = pd.read_excel(
-    io="C:\\Users\\bigca\\Documents\\GitHub\\Isomer_Search_Engine\\!Isomer Datasheet.xlsx",
+    io="!Isomer Datasheet.xlsx",
     engine='openpyxl',
     sheet_name='Graph Data',
     skiprows=1,
@@ -21,7 +21,7 @@ df = pd.read_excel(
     nrows=2860,
 )
 df0 = pd.read_excel(
-    io="C:\\Users\\bigca\\Documents\\GitHub\\Isomer_Search_Engine\\!Isomer Datasheet.xlsx",
+    io="!Isomer Datasheet.xlsx",
     engine='openpyxl',
     sheet_name='Times',
     skiprows=1,
@@ -29,7 +29,7 @@ df0 = pd.read_excel(
     nrows=1109,
 )
 df1 = pd.read_excel(
-    io="C:\\Users\\bigca\\Documents\\GitHub\\Isomer_Search_Engine\\!Isomer Datasheet.xlsx",
+    io="!Isomer Datasheet.xlsx",
     engine='openpyxl',
     sheet_name='Times',
     skiprows=1,
@@ -37,7 +37,7 @@ df1 = pd.read_excel(
     nrows=1373,
 )
 df2 = pd.read_excel(
-    io="C:\\Users\\bigca\\Documents\\GitHub\\Isomer_Search_Engine\\!Isomer Datasheet.xlsx",
+    io="!Isomer Datasheet.xlsx",
     engine='openpyxl',
     sheet_name='Times',
     skiprows=1,
@@ -45,7 +45,7 @@ df2 = pd.read_excel(
     nrows=194,
 )
 df3 = pd.read_excel(
-    io="C:\\Users\\bigca\\Documents\\GitHub\\Isomer_Search_Engine\\!Isomer Datasheet.xlsx",
+    io="!Isomer Datasheet.xlsx",
     engine='openpyxl',
     sheet_name='Times',
     skiprows=1,
@@ -53,7 +53,7 @@ df3 = pd.read_excel(
     nrows=106,
 )
 df4 = pd.read_excel(
-    io="C:\\Users\\bigca\\Documents\\GitHub\\Isomer_Search_Engine\\!Isomer Datasheet.xlsx",
+    io="!Isomer Datasheet.xlsx",
     engine='openpyxl',
     sheet_name='Times',
     skiprows=1,
@@ -61,7 +61,7 @@ df4 = pd.read_excel(
     nrows=38,
 )
 df5 = pd.read_excel(
-    io="C:\\Users\\bigca\\Documents\\GitHub\\Isomer_Search_Engine\\!Isomer Datasheet.xlsx",
+    io="!Isomer Datasheet.xlsx",
     engine='openpyxl',
     sheet_name='Times',
     skiprows=1,
@@ -69,7 +69,7 @@ df5 = pd.read_excel(
     nrows=13,
 )
 df6 = pd.read_excel(
-    io="C:\\Users\\bigca\\Documents\\GitHub\\Isomer_Search_Engine\\!Isomer Datasheet.xlsx",
+    io="!Isomer Datasheet.xlsx",
     engine='openpyxl',
     sheet_name='Times',
     skiprows=1,
@@ -77,7 +77,7 @@ df6 = pd.read_excel(
     nrows=18,
 )
 df7 = pd.read_excel(
-    io="C:\\Users\\bigca\\Documents\\GitHub\\Isomer_Search_Engine\\!Isomer Datasheet.xlsx",
+    io="!Isomer Datasheet.xlsx",
     engine='openpyxl',
     sheet_name='Times',
     skiprows=1,
@@ -85,7 +85,7 @@ df7 = pd.read_excel(
     nrows=6,
 )
 dfs = pd.read_excel(
-    io="C:\\Users\\bigca\\Documents\\GitHub\\Isomer_Search_Engine\\!Isomer Datasheet.xlsx",
+    io="!Isomer Datasheet.xlsx",
     engine='openpyxl',
     sheet_name='Solar Abundance',
     skiprows=1,
