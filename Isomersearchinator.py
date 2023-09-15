@@ -112,7 +112,7 @@ plot_options = {
     "Microseconds": True,
     "Milliseconds": True,
     "Seconds": True,
-    "Minuets": True,
+    "Minutes": True,
     "Hours": True,
     "Days": True,
     "Years": True
@@ -605,7 +605,7 @@ if plot_options["Seconds"]:
     ]
     shapes += shapes3
 
-if plot_options["Minuets"]:
+if plot_options["Minutes"]:
     fig.add_scatter(
         x=df_selection4['Gamma_(keV).4'],
         y=intensities4,
@@ -798,7 +798,7 @@ if plot_options["Seconds"]:
         name='Seconds'
     )
 
-if plot_options["Minuets"]:
+if plot_options["Minutes"]:
     fig2.add_scatter(
         x=df_selection4['AMU.4'],
         y=df_selection4['Gamma_(keV).4'],
@@ -893,12 +893,12 @@ if plot_options["Seconds"]:
     st.download_button(label="Download Isomer Second Data", data=b64_data3, file_name='isomers_sec.csv',
                        mime='text/csv')
 
-if plot_options["Minuets"]:
+if plot_options["Minutes"]:
     st.subheader("Dataframe for Isomers with Minute Half-Lives")
     st.dataframe(df_selection4)
     csv_data4 = download_dataframe(df_selection4)
     b64_data4 = base64.b64decode(csv_data4)
-    st.download_button(label="Download Isomer Minuet Data", data=b64_data4, file_name='isomers_min.csv',
+    st.download_button(label="Download Isomer Minute Data", data=b64_data4, file_name='isomers_min.csv',
                        mime='text/csv')
 
 if plot_options["Hours"]:
@@ -930,6 +930,7 @@ fig3 = px.bar(
     x='Element',
     y='Amount',
     color='atom%',
+    hover_data='AMU'
     title='Solar Abundance',
     log_y=True,
     color_continuous_scale='algae'
