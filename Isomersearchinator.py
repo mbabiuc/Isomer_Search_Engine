@@ -284,8 +284,8 @@ df_selection3 = df3[
     (df3['Gamma_(keV).3'].between(gre[0], gre[1], inclusive='both'))
     ]
 
-# -----------------------------Minuets selection filters df4___________________________
-st.sidebar.subheader("Minuets")
+# -----------------------------Minutes selection filters df4___________________________
+st.sidebar.subheader("Minutes")
 column_names4 = ['AMU.4', 'Half_Life.4', 'Gamma_(keV).4']  # List of column names to filter
 # This is the setup for how the lsider works using the streamlit library
 slider_range4 = {}
@@ -617,7 +617,7 @@ if plot_options["Minuets"]:
                 'Half-Life: ' + df_selection4['Half_Life.4'].astype(str) + '<br>' +
                 'Gamma Ray Energy: ' + df_selection4['Gamma_(keV).4'].astype(str)),
         mode='markers',
-        name='Minuets'
+        name='Minutes'
     )
     numpoints4 = len(df_selection4)
     x0_val = df_selection4["Gamma_(keV).4"].values
@@ -810,7 +810,7 @@ if plot_options["Minuets"]:
                 'Half-Life: ' + df_selection4['Half_Life.4'].astype(str) + '<br>' +
                 'Gamma Ray Energy: ' + df_selection4['Gamma_(keV).4'].astype(str)),
         mode='markers',
-        name='Minuets'
+        name='Minutes'
     )
 
 
@@ -894,7 +894,7 @@ if plot_options["Seconds"]:
                        mime='text/csv')
 
 if plot_options["Minuets"]:
-    st.subheader("Dataframe for Isomers with Minuet Half-Lives")
+    st.subheader("Dataframe for Isomers with Minute Half-Lives")
     st.dataframe(df_selection4)
     csv_data4 = download_dataframe(df_selection4)
     b64_data4 = base64.b64decode(csv_data4)
