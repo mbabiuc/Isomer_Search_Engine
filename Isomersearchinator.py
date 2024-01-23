@@ -6,7 +6,7 @@ import base64
 
 # My fork
 # This is the general page setup info  
-st.set_page_config(page_title='Isomer Search Engine',
+st.set_page_config(page_title='Forked Isomer Search Engine',
                    page_icon=':☢:',
                    layout='wide')
 
