@@ -4,7 +4,7 @@ import plotly_express as px
 import numpy as np
 import base64
 
-# This is the general page setup info
+# This is the general page setup info  
 st.set_page_config(page_title='Isomer Search Engine',
                    page_icon=':☢:',
                    layout='wide')
